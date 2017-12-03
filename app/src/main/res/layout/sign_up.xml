@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="14">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sign Up"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/profilePhotoID"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/icon_profile_avator"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:id="@+id/ProfilePhotoButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Upload Profile Photo"
+                android:onClick="ProfilePhotoButtonClicked"
+                android:textSize="16dp"
+                android:background="@drawable/custom_button"
+                android:textColor="#000000"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/FirstNameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="First Name"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/LastNameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Last Name"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <TextView
+                android:id="@+id/dateOfBirthID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Date of Birth"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <Button
+                android:id="@+id/DatePickerButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Enter DOB"
+                android:onClick="showDatePickerDialog"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/custom_button"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/EmailID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Email Address"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/PasswordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Password"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/ConfirmPasswordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/PhoneNumberID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/SocialSecurityNumberID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Social Security Number"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/AddressID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Address"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/BankNameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Bank Name"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <EditText
+                android:id="@+id/IBANID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="IBAN"
+                android:textSize="20dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton android:id="@+id/LenderRadioButtonID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:text="Lender"
+                    android:textStyle="bold"
+                    android:textColor="#bcee68"
+                    android:onClick="LenderRadioButtonClicked"/>
+
+                <RadioButton android:id="@+id/BorrowerRadioButtonID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:text="Borrower"
+                    android:textStyle="bold"
+                    android:textColor="#bcee68"
+                    android:onClick="BorrowerRadioButtonClicked"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/BankStatementPhotoID"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/bank_statment"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:id="@+id/BankStatementPhotoButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Upload Bank Statement Photo"
+                android:onClick="BankStatementButtonClicked"
+                android:textSize="12dp"
+                android:background="@drawable/custom_button"
+                android:textColor="#000000"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/IDCardPhotoID"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/id_card_1"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/IDCardButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Upload ID Card Photo"
+                android:onClick="IDCardButtonClicked"
+                android:textSize="12dp"
+                android:background="@drawable/custom_button"
+                android:textColor="#000000"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:id="@+id/RegisterButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Register"
+                android:textSize="20dp"
+                android:onClick="RegisterButtonClicked"
+                android:background="@drawable/custom_button"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
